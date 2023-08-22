@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(3,9,40,0.7),
+    rgba(3,9,40,0.7)),url(eduford_img/banner.png);
+    background-position: center;
+    background-size:cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding:2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width:150px;
+}
+
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    display:inline-block;
+    padding:8px 12px;
+}
+.nav-links ul a{
+    list-style:none;
+    color:white;
+    text-decoration: none;
+}
+
+.text-box{
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top:12%;
+    color: white;
+}
+.text-box h1{
+    font-size:65px;
+}
+
+.text-box p{
+    font-size:16px;
+    margin: 15px 0px 40px;
+}
+
+.hero-btn{
+    text-decoration: none;
+    border:1px solid white;
+    padding:10px 30px 10px ;
+    border-radius: 4px;
+    color:white;
+    transition: 600ms ease-out;
+}
+
+.hero-btn:hover{
+    background-color: orangered;
+    border:none;
+    padding:10px;
+    border-radius: 5px;
+    color:white;
+}
+
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.course h1{
+    font-size:36px;
+    font-weight: 600;
+}
+
+.course p{
+    color:black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis:31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding:15px;
+    box-sizing: border-box;
+    transition: 500ms;
+}
+.course-col h3{
+    text-align: center;
+    font-weight: 600;
+    margin:10px;
+}
+
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.23);
+    padding:13px
+}
+
+/*To make the course reponsive*/
+@media (max-width :700px) {
+    .text-box h1{
+        font-size: 45px;
+    }
+   
+    .row{
+        flex-direction: column;
+    }
+    .course{
+        padding-top: 45px;
+    }
+    .text-box p{
+        font-size:16px;
+        margin: 40px 0px 70px;
+    }
+    .course h1{
+        font-size: 30px;
+    } 
+    .campus-col img{
+        width: 20%;
+    }
+}
+
+.campus{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+}
+.campus h1{
+    font-size:32px;
+    margin-bottom:8px;
+}
+
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+}
+.campus-col img{
+    width: 100%;
+}
+
+.layer{
+    color: #fff3f3;
+    font-size: medium;
+    background: rgba(225, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    bottom:0px;
+    left:0px;
+}
+.layer h3{
+    width:100%;
+    font-weight: 500;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+    position:absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    opacity: 1;
+}
+.layer:hover h3{
+    bottom:49%;
+    opacity: 1;
+}
+
+.facilities{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding-top:100px;
+    margin-bottom: 10%;
+}
+.facilities h1{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.facilities-col{
+    flex-basis: 31%;
+    margin-bottom: 7%;
+    border-radius: 10px;
+}
+
+.facilities-col img{
+   width: 100%;
+   border-radius: 10px;
+}
+.facilities-col h3{
+    margin-top:16px;
+    margin-bottom:15px;
+    text-align:left;
+    
+ }
+ .facilities-col p{
+    padding:0px;
+    text-align: left ;
+    color: grey;
+ }
+
+ footer{
+    background-image:linear-gradient(rgba(5, 7, 17, 0.815),
+    rgba(5, 7, 17, 0.815)),url(eduford_img/banner2.jpg);
+    background-size: cover;
+    background-position: center;
+    
+ }
+
+ footer ul li{
+    list-style: none;
+    margin-bottom:12px;
+ }
+ footer ul li a{
+    text-decoration: none;
+    color:white;
+ }
